@@ -15,7 +15,7 @@ sudo apt-get install python-pyrex
 
 On Windows: 
   * You will also need something to extract .tar.gz files, such as [http://www.7-zip.org/ 7-zip].
-  * You will need stuff as described in [http://boodebr.org/main/python/build-windows-extensions building with free tools]. (Specifically, you'll need [http://www.mingw.org/ MinGW] which you can try getting in that link or try [http://kent.dl.sourceforge.net/sourceforge/mingw/MinGW-5.1.3.exe a direct download of MinGW-5.1.3.exe].)
+  * You will need stuff as described in [http://boodebr.org/main/python/build-windows-extensions building with free tools]. (Specifically, you'll need [http://www.mingw.org/ MinGW+MSYS] which you can try getting in that link or try [http://kent.dl.sourceforge.net/sourceforge/mingw/MinGW-5.1.3.exe a direct download of MinGW-5.1.3.exe] and [http://surfnet.dl.sourceforge.net/sourceforge/mingw/MSYS-1.0.10.exe MSYS-1.0.10.exe])
 
 = Building =
   # Extract the archive.
