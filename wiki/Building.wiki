@@ -15,7 +15,7 @@ sudo apt-get install python-pyrex
 
 On Windows: 
   * You will also need something to extract .tar.gz files, such as [http://www.7-zip.org/ 7-zip].
-  * You will need stuff as described [http://boodebr.org/main/python/build-windows-extensions building with free tools] or here: [http://www.vrplumber.com/programming/mstoolkit/ buliding with MS Toolkit].
+  * You will need stuff as described [http://boodebr.org/main/python/build-windows-extensions building with free tools].
 
 = Building =
   # Extract the archive.
