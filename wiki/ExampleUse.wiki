@@ -7,28 +7,65 @@
 
 To use the tracer, just run pytracefile.py with a Python source.
 
-For example, if you have a program that you run:
+For example, lets look at test.py:
 
 {{{
-python mygame.py arg1 arg2
+import time
+
+def g():
+    time.sleep(0.1)
+    print 'g'
+
+def f():
+    for i in xrange(10):
+        g()
+
+if __name__ == '__main__':
+    f()
 }}}
 
-Then just run:
+Lets run it:
+{{{
+$ python test.py
+g
+g
+g
+g
+g
+g
+g
+g
+g
+g
+}}}
+
+To get a trace, we can just run:
 
 {{{
-pytracefile.py mygame.py arg1 arg2
+$ pytracefile.py test.py
+g
+g
+g
+g
+g
+g
+g
+g
+g
+g
 }}}
-
-Note: The python paths are not currently fixed in accordance with normal script running, so you may need to use PYTHONPATH=<scriptpath> pytracefile.py ....    in order for it to run correctly.
-
 
 This will create or overwrite a profile/trace output file called "profile.out".
 You can rename this to whatever you wish, but there is currently no way to control the output filename from pytracefile.py itself.
 
+Note: The python paths are not currently fixed in accordance with normal script running, so you may need to use PYTHONPATH=<scriptpath> pytracefile.py ....    in order for it to run correctly.
+
 == Viewing a trace ==
 
-To view the trace, just run:
+To view the trace, we can run:
 
 {{{
 pytracerview.py profile.out
 }}}
+
+which results in a Gtk+ trace viewer (see Screenshot download).
