@@ -69,4 +69,4 @@ pytracerview.py profile.out
 }}}
 
 which results in a Gtk+ trace viewer that looks like:
-[http://pythontracer.googlecode.com/files/TraceViewer.png]
+[http://pythontracer.googlecode.com/files/TracerViewWindow.png]
