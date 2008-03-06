@@ -16,28 +16,6 @@ sudo apt-get install python-pyrex
 On Windows: 
   * You will also need something to extract .tar.gz files, such as [http://www.7-zip.org/ 7-zip].
   * You will need stuff as described in [http://boodebr.org/main/python/build-windows-extensions building with free tools]. (Specifically, you'll need [http://www.mingw.org/ MinGW] which you can try getting in that link or try [http://kent.dl.sourceforge.net/sourceforge/mingw/MinGW-5.1.3.exe a direct download of MinGW-5.1.3.exe].)
-  * After installing MinGW you may need to create the following batch file:
-    {{{
-@echo off
-
-echo MinGW Enviroment Command Console
-echo ....
-echo ....
-@set MINGWROOT=C:\MinGW
-@set MINGWBIN=%MINGWROOT%\bin
-@set MINGWINCLUDE=%MINGWROOT%\include
-@set MINGWLIB=%MINGWROOT%\lib
-@set MINGWLIBEXEC=%MINGWROOT%\libexec\gcc\mingw32\3.4.5
-@set MINGWBIN2=%MINGWROOT%\mingw32\bin
-@set MINGWLIB2=%MINGWROOT%\mingw32\lib\ldscripts
-@set MINGW=%MINGWROOT%;%MINGWBIN%;%MINGWINCLUDE%;%MINGWLIB%;%MINGWLIBEXEC%;%MINGWLIB2%;%MINGWLIB2%
-
-rem to add more resource paths just use the set command like above and the and it to the set PATH like below
-
-@set Path=%MINGW%;%Path%
-}}}
-
-Save this as a .bat file and run it inside a cmd.exe prompt to get the proper environment.
 
 = Building =
   # Extract the archive.
