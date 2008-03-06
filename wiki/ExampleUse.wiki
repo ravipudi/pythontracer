@@ -1,0 +1,34 @@
+#summary Example use of the tracer
+#labels Featured
+
+= Example use =
+
+== Creating a trace ==
+
+To use the tracer, just run pytracefile.py with a Python source.
+
+For example, if you have a program that you run:
+
+{{{
+python mygame.py arg1 arg2
+}}}
+
+Then just run:
+
+{{{
+pytracefile.py mygame.py arg1 arg2
+}}}
+
+Note: The python paths are not currently fixed in accordance with normal script running, so you may need to use PYTHONPATH=<scriptpath> pytracefile.py ....    in order for it to run correctly.
+
+
+This will create or overwrite a profile/trace output file called "profile.out".
+You can rename this to whatever you wish, but there is currently no way to control the output filename from pytracefile.py itself.
+
+== Viewing a trace ==
+
+To view the trace, just run:
+
+{{{
+pytracerview.py profile.out
+}}}
