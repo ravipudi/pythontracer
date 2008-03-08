@@ -21,5 +21,5 @@ On Windows:
   # Extract the archive.
   # Open a terminal (or cmd.exe in Windows)
   # cd to the directory pytracer/tracer
-  # run: `python setup.py bdist` or `bdsit_wininst` (for a windows installation package)
+  # run: `python setup.py bdist` or `bdist_wininst` (for a windows installation package)
   
