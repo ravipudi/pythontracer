@@ -65,8 +65,10 @@ Note: The python paths are not currently fixed in accordance with normal script 
 To view the trace, we can run:
 
 {{{
-$ pytracerview.py profile.out
+$ pytracefile.py -v profile.out
 }}}
 
 which results in a Gtk+ trace viewer that looks like:
 [http://pythontracer.googlecode.com/files/TracerViewWindow.png]
+
+It is possible to have the viewer automatically be spawned immediately when the trace is complete. See pytracefile.py --help for more details.
